@@ -19,11 +19,14 @@
           console.log(pointer);
           break;
         case '>':
-          if (pointer === output.length) {
+          if ((pointer + 1) === output.length) {
             console.log('push');
             output.push(0);
             pointer++;
           } else {
+            console.log('pointer length: ' + pointer);
+            console.log('output length: ' + output.length);
+            console.log('nope' + 'undefined');
             pointer++;
           }
           break;
